@@ -14,7 +14,7 @@ case class NotifyInventoryReturnedGood(evt: AllocationReturnedEvent)
 case class NotifyInventoryReturnedDamaged(evt: AllocationReturnedEvent)
 case class NotifyInventoryOverdue(evt: AllocationOverdueEvent)
 
-case class NotifyMaintenanceDamaged(evt: NotifyMaintenanceDamaged)
+case class NotifyMaintenanceDamaged(evt: AllocationReturnedEvent)
 
 class NotificationActor(mailer: Mailer) extends Actor {
 
